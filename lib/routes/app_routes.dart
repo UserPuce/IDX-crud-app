@@ -2,12 +2,11 @@ import 'package:go_router/go_router.dart';
 
 import 'package:myapp/views/index.dart';
 
-
 class AppRoutes {
-    static String home = "/";
-    static String createUpdate = "/create-update";
-    static String productDetail = "/product-detail";
-    static String productsListView = "/product-list-view";
+  static String home = "/";
+  static String createUpdate = "/create-update";
+  static String productDetail = "/product-detail";
+  static String productsListView = "/product-list-view";
 }
 
 final routesConfig = GoRouter(routes: [
@@ -27,4 +26,5 @@ final routesConfig = GoRouter(routes: [
     path: AppRoutes.productDetail,
     builder: (context, state) => const ProductDetailView(),
   ),
+
 ]);
